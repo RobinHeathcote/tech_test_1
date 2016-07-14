@@ -22,7 +22,7 @@ def sentence_count(string)
 end
 
 def longest_word(string)
-  string.split(" ").max_by(&:length)
+  string.split(' ').max_by(&:length)
 end
 
 def average_word_length(string)

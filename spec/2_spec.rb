@@ -1,6 +1,6 @@
 require './lib/2'
 
-  describe 'string methods' do
+describe 'string methods' do
 
   it 'counts the number of words in a given string' do
     expect(word_count('This is a sentence')).to eq(4)
@@ -24,20 +24,20 @@ require './lib/2'
   end
 end
 
-  describe 'JSON generator' do
-    it 'returns the word count as JSON when passed a string' do
-      expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"wordcount\":6")
-    end
-    it 'returns the sentence count as JSON when passed a string' do
-      expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"sentencecount\":2")
-    end
-    it 'returns the longest word as JSON when passed a string' do
-      expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"longestword\":\"extract\"")
-    end
-    it 'returns the average word length as JSON when passed a string' do
-      expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"averagewordlength\":5")
-    end
-    it 'returns the amount of words with more than three characters as JSON when passed a string' do
-      expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"morethanthreechars\":6")
-    end
+describe 'JSON generator' do
+  it 'returns the word count as JSON when passed a string' do
+    expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"wordcount\":6")
+  end
+  it 'returns the sentence count as JSON when passed a string' do
+    expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"sentencecount\":2")
+  end
+  it 'returns the longest word as JSON when passed a string' do
+    expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"longestword\":\"extract\"")
+  end
+  it 'returns the average word length as JSON when passed a string' do
+    expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"averagewordlength\":5")
+  end
+  it 'returns the amount of words with more than three characters as JSON when passed a string' do
+    expect(string_to_json('Hello world. Let\'s extract some info.')).to include("\"morethanthreechars\":6")
+  end
 end

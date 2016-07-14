@@ -1,8 +1,8 @@
 def odd_even_rounder(num)
   if is_even?(num)
-      num.floor
+    num.floor
   else
-    if num >= (num.floor) + 0.5
+    if num >= num.floor + 0.5
       num.ceil
     end
   end
